@@ -1,0 +1,891 @@
+<!-- minecraft-mobs.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse | Minecraft Mobs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="grid-background"></div>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon"><i class="fas fa-gamepad"></i></span>
+                <h1 class="logo-text">GAME<span class="logo-highlight">VERSE</span></h1>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="minecraft.html" class="nav-link"><i class="fas fa-cube"></i> Minecraft</a>
+                <a href="minecraft-mobs.html" class="nav-link active"><i class="fas fa-dragon"></i> Mobs</a>
+                <a href="#" class="nav-link"><i class="fas fa-trophy"></i> Leaderboards</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-auth"><i class="fas fa-user-astronaut"></i> Profile</button>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobs Hero Section -->
+    <section class="content-hero">
+        <div class="hero-content">
+            <div class="content-badge">COMPLETE ENCYCLOPEDIA</div>
+            <h2 class="content-title">MINECRAFT <span class="text-gradient">MOBS</span></h2>
+            <p class="content-subtitle">Master every mob type, behavior, and farming strategy with our complete mob guide</p>
+            
+            <!-- Mobs Search -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search mobs (e.g., Creeper, Ender Dragon, Warden)..." id="mobSearch">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="filter-tags">
+                    <span class="filter-tag active">All</span>
+                    <span class="filter-tag">Passive</span>
+                    <span class="filter-tag">Hostile</span>
+                    <span class="filter-tag">Neutral</span>
+                    <span class="filter-tag">Boss</span>
+                    <span class="filter-tag">New (2026)</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobs Stats -->
+        <div class="content-stats">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>70+</h4>
+                    <p>Total Mobs</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>28</h4>
+                    <p>Passive Mobs</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-skull"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>32</h4>
+                    <p>Hostile Mobs</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>3</h4>
+                    <p>Boss Mobs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mobs Tiers -->
+    <section class="tier-section">
+        <div class="section-header">
+            <h3 class="section-title"><span class="text-outline">MOBS TIERS</span> 2026</h3>
+            <p class="section-subtitle">Ranked by danger level, loot value, and farming efficiency</p>
+        </div>
+        
+        <div class="tier-container">
+            <!-- Tier S - Boss Mobs -->
+            <div class="tier-tier tier-s">
+                <div class="tier-header">
+                    <h4><i class="fas fa-crown"></i> TIER S - BOSS MOBS</h4>
+                    <span class="tier-desc">End-game challenges with unique mechanics</span>
+                </div>
+                <div class="tier-characters">
+                    <div class="character-card" data-mob="ender-dragon">
+                        <div class="character-img">
+                            <img src="https://i.ytimg.com/vi/AZHL6HVfGew/maxresdefault.jpg" alt="Ender Dragon">
+                            <div class="character-overlay">
+                                <span class="character-type">Boss</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>ENDER DRAGON</h5>
+                            <p class="character-skill">The End</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                    
+                    <div class="character-card" data-mob="wither">
+                        <div class="character-img">
+                            <img src="https://static0.thegamerimages.com/wordpress/wp-content/uploads/2022/01/Dangerous-Minecraft-Mobs.jpg?w=1200&h=628&fit=crop" alt="Wither">
+                            <div class="character-overlay">
+                                <span class="character-type">Boss</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>THE WITHER</h5>
+                            <p class="character-skill">Player-Summoned</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                    
+                    <div class="character-card" data-mob="warden">
+                        <div class="character-img">
+                            <img src="https://i.ytimg.com/vi/AZHL6HVfGew/maxresdefault.jpg" alt="Warden">
+                            <div class="character-overlay">
+                                <span class="character-type">Boss</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>THE WARDEN</h5>
+                            <p class="character-skill">Deep Dark</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tier A - Dangerous Hostile -->
+            <div class="tier-tier tier-a">
+                <div class="tier-header">
+                    <h4><i class="fas fa-gem"></i> TIER A - DANGEROUS HOSTILE</h4>
+                    <span class="tier-desc">High threat mobs requiring strategy</span>
+                </div>
+                <div class="tier-characters">
+                    <div class="character-card" data-mob="creeper">
+                        <div class="character-img">
+                            <img src="https://i.ytimg.com/vi/MM6imXeow5g/maxresdefault.jpg" alt="Creeper">
+                            <div class="character-overlay">
+                                <span class="character-type">Hostile</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>CREEPER</h5>
+                            <p class="character-skill">Explosive</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                    
+                    <div class="character-card" data-mob="enderman">
+                        <div class="character-img">
+                            <img src="https://i.ytimg.com/vi/CibauzPErMQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBz5PX3zYJzs05oq33prbtESG8oGg" alt="Enderman">
+                            <div class="character-overlay">
+                                <span class="character-type">Neutral</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>ENDERMAN</h5>
+                            <p class="character-skill">Teleportation</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.2</span>
+                            </div>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                    
+                    <div class="character-card" data-mob="pillager">
+                        <div class="character-img">
+                            <img src="https://static0.thegamerimages.com/wordpress/wp-content/uploads/2022/01/Dangerous-Minecraft-Mobs.jpg?w=1200&h=628&fit=crop" alt="Pillager">
+                            <div class="character-overlay">
+                                <span class="character-type">Hostile</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>PILLAGER</h5>
+                            <p class="character-skill">Crossbow</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span>3.7</span>
+                            </div>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mobs Details -->
+    <section class="content-details">
+        <div class="section-header">
+            <h3 class="section-title">COMPLETE <span class="text-gradient">MOBS GUIDE</span></h3>
+            <p class="section-subtitle">Detailed analysis of every mob's behavior, drops, and farming strategies</p>
+        </div>
+        
+        <div class="content-tabs">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="passive">Passive Mobs</button>
+                <button class="tab-btn" data-tab="hostile">Hostile Mobs</button>
+                <button class="tab-btn" data-tab="neutral">Neutral Mobs</button>
+                <button class="tab-btn" data-tab="bosses">Boss Mobs</button>
+                <button class="tab-btn" data-tab="farming">Farming Guide</button>
+                <button class="tab-btn" data-tab="faq">FAQ</button>
+            </div>
+            
+            <div class="tab-content">
+                <!-- Passive Mobs Tab -->
+                <div class="tab-pane active" id="passive">
+                    <h4>🐄 Passive Mobs (The Resource Providers)</h4>
+                    <p>Passive mobs will never attack you, even if you strike them. They are essential for food, materials, and companionship.</p>
+                    
+                    <div class="character-detail-grid">
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>Wolf Pups (2026)</h5>
+                                    <span class="character-detail-role">New Variants</span>
+                                </div>
+                                <div class="character-detail-badge defensive">Companion</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <div class="character-detail-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Behavior</span>
+                                        <span class="stat-value">Passive</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Biomes</span>
+                                        <span class="stat-value">9 Variants</span>
+                                    </div>
+                                </div>
+                                <p class="character-detail-desc">The 2026 "Spring to Life" update introduced redesigned baby mobs with unique chunky models, large "one-pixel" eyes, and custom high-pitched sounds.</p>
+                                <div class="character-detail-tips">
+                                    <h6>Features:</h6>
+                                    <p>• Snowy, Woods, Ashen variants<br>
+                                    • Unique "howl" personalities<br>
+                                    • Climate-based textures</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>Sniffer</h5>
+                                    <span class="character-detail-role">Ancient Mob</span>
+                                </div>
+                                <div class="character-detail-badge support">Utility</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <div class="character-detail-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Behavior</span>
+                                        <span class="stat-value">Passive</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Ability</span>
+                                        <span class="stat-value">Seed Finding</span>
+                                    </div>
+                                </div>
+                                <p class="character-detail-desc">Ancient mobs that "sniff" out rare seeds like Torchflowers from suspicious sand blocks in warm ocean ruins.</p>
+                                <div class="character-detail-tips">
+                                    <h6>How to Use:</h6>
+                                    <p>Lead Sniffers around warm ocean biomes to find hidden seeds and complete your botanical collection.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hostile Mobs Tab -->
+                <div class="tab-pane" id="hostile">
+                    <h4>🧟 Hostile Mobs (The Night Hunters)</h4>
+                    <p>These mobs attack on sight and are the primary challenge of Survival mode.</p>
+                    
+                    <div class="character-detail-grid">
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>Creeper</h5>
+                                    <span class="character-detail-role">The Exploder</span>
+                                </div>
+                                <div class="character-detail-badge defensive">Dangerous</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <div class="character-detail-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Attack</span>
+                                        <span class="stat-value">Explosion</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Fear</span>
+                                        <span class="stat-value">Cats</span>
+                                    </div>
+                                </div>
+                                <p class="character-detail-desc">Silent and explosive mobs that creep up on players. They hiss for 1.5 seconds before exploding, dealing massive damage to players and terrain.</p>
+                                <div class="character-detail-tips">
+                                    <h6>Pro Tip:</h6>
+                                    <p>Keep a Cat nearby; Creepers are terrified of them and will run away. Use bows to kill them from a distance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>Parched Skeleton</h5>
+                                    <span class="character-detail-role">Desert Archer</span>
+                                </div>
+                                <div class="character-detail-badge support">2026 Update</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <div class="character-detail-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Attack</span>
+                                        <span class="stat-value">Bow & Arrow</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Mount</span>
+                                        <span class="stat-value">Camel Husk</span>
+                                    </div>
+                                </div>
+                                <p class="character-detail-desc">New desert skeleton variant in 2026 that can now ride Camel Husks to attack you with bows from an elevated position.</p>
+                                <div class="character-detail-tips">
+                                    <h6>Strategy:</h6>
+                                    <p>Target the Camel Husk first to dismount the skeleton, then engage at close range where bows are less effective.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Boss Mobs Tab -->
+                <div class="tab-pane" id="bosses">
+                    <h4>💀 Boss Mobs (The End-Game Challenges)</h4>
+                    <p>Bosses have massive health bars and require specific arenas or summoning rituals.</p>
+                    
+                    <div class="sensitivity-table">
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Boss</th>
+                                        <th>Location</th>
+                                        <th>Best Weapon</th>
+                                        <th>Key Drop</th>
+                                        <th>Difficulty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ender Dragon</td>
+                                        <td>The End</td>
+                                        <td>Power V Bow / Beds</td>
+                                        <td>Dragon Egg & XP</td>
+                                        <td><span class="table-highlight">⭐⭐⭐⭐⭐</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>The Wither</td>
+                                        <td>Player-Summoned</td>
+                                        <td>Smite V Sword</td>
+                                        <td>Nether Star (Beacons)</td>
+                                        <td><span class="table-highlight">⭐⭐⭐⭐</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>The Warden</td>
+                                        <td>Deep Dark</td>
+                                        <td>Stealth / Power Bow</td>
+                                        <td>Echo Shards / Recovery Compass</td>
+                                        <td><span class="table-highlight">⭐⭐⭐⭐⭐</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="layout-tip">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                            <p><strong>The Warden Note:</strong> Technically a "challenge mob" rather than a boss, but it is the strongest entity in the game. It is blind and tracks you by vibration. Use wool blocks to walk silently.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Farming Guide Tab -->
+                <div class="tab-pane" id="farming">
+                    <h4>🚜 Pro Mob Tactics & Farming</h4>
+                    
+                    <div class="character-detail-grid">
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>Automated Mob Grinders</h5>
+                                    <span class="character-detail-role">XP Farm</span>
+                                </div>
+                                <div class="character-detail-badge defensive">Efficient</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <p class="character-detail-desc">Build a dark "spawning room" 24+ blocks above the ground. Use water streams to push mobs into a central hole. If they fall 23 blocks, they will stay at half a heart of health, allowing you to one-hit kill them for massive XP and loot.</p>
+                                <div class="character-detail-tips">
+                                    <h6>Requirements:</h6>
+                                    <p>• Dark spawning platforms<br>
+                                    • Water collection system<br>
+                                    • 23-block drop<br>
+                                    • Collection area with hoppers</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>Utility Mobs</h5>
+                                    <span class="character-detail-role">Your Bodyguards</span>
+                                </div>
+                                <div class="character-detail-badge support">Defense</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <div class="character-detail-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Snow Golem</span>
+                                        <span class="stat-value">Ranged Defense</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Wolf Army</span>
+                                        <span class="stat-value">Melee Defense</span>
+                                    </div>
+                                </div>
+                                <p class="character-detail-desc">• Snow Golems: Built with two snow blocks and a pumpkin. They throw snowballs at monsters.<br>
+                                • Tamed Wolf Army: With the 2026 Wolf Armor, a pack of 10 wolves can now survive several Creeper blasts, making them viable for cave exploration.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="layout-tip">
+                        <i class="fas fa-tips"></i>
+                        <div>
+                            <p><strong>The "Lead" Trick:</strong> You can use a Lead to pull almost any passive or neutral mob. In 2026, Boats and Minecarts are still the best way to transport "unwilling" mobs like Villagers over long distances.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Tab -->
+                <div class="tab-pane" id="faq">
+                    <h4>❓ Frequently Asked Questions</h4>
+                    
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4><i class="fas fa-question-circle"></i> What's the strongest mob in Minecraft?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The Warden is technically the strongest entity with 500 health points (250 hearts). However, the Ender Dragon and Wither are considered "boss mobs" with unique mechanics.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4><i class="fas fa-question-circle"></i> How do I avoid the Warden?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The Warden is blind and detects players through vibrations. Use wool blocks to walk silently, crouch to reduce noise, and avoid breaking blocks or placing items near it.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4><i class="fas fa-question-circle"></i> What are the 2026 mob updates?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The "Spring to Life" update introduced redesigned baby mobs with unique variants: 9 wolf pup types, 11 kitten personalities, and climate-specific baby animals with chunky models and custom sounds.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Guides -->
+    <section class="video-guides">
+        <div class="section-header">
+            <h3 class="section-title">MOBS <span class="text-outline">VIDEO GUIDES</span></h3>
+            <p class="section-subtitle">Learn from the best with professional gameplay and tutorials</p>
+        </div>
+        
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://i.ytimg.com/vi/MM6imXeow5g/maxresdefault.jpg" alt="Minecraft Mob Overhaul">
+                    <div class="video-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h5>Minecraft Mob Overhaul 2026</h5>
+                    <p>Complete guide to all new mob variants and behaviors in the Spring to Life update</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 18:30</span>
+                        <span><i class="far fa-eye"></i> 345K</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://i.ytimg.com/vi/Fyf5F64nKMs/maxresdefault.jpg" alt="Warden Guide">
+                    <div class="video-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h5>Warden Survival Guide</h5>
+                    <p>Master the Deep Dark and survive encounters with the Warden</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 22:15</span>
+                        <span><i class="far fa-eye"></i> 512K</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://i.ytimg.com/vi/AZHL6HVfGew/maxresdefault.jpg" alt="Boss Fights">
+                    <div class="video-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h5>Boss Fight Strategies</h5>
+                    <p>Defeat Ender Dragon, Wither, and Warden with pro tactics</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 25:40</span>
+                        <span><i class="far fa-eye"></i> 289K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Back Navigation -->
+    <div class="back-navigation">
+        <a href="minecraft.html" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Back to Minecraft
+        </a>
+        <div class="quick-nav">
+            <a href="minecraft-blocks.html" class="quick-nav-btn">
+                <i class="fas fa-cube"></i> Blocks
+            </a>
+            <a href="minecraft-items.html" class="quick-nav-btn">
+                <i class="fas fa-mountain"></i> Items
+            </a>
+            <a href="minecraft-howtoplay.html" class="quick-nav-btn">
+                <i class="fas fa-bolt"></i> How to Play
+            </a>
+            <a href="minecraft-crafting.html" class="quick-nav-btn">
+                <i class="fas fa-magic"></i> Crafting
+            </a>
+            <a href="minecraft-controls.html" class="quick-nav-btn">
+                <i class="fas fa-magic"></i> Controls
+            </a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>GAME<span>VERSE</span></h3>
+                </div>
+                <p class="footer-description">Your ultimate gaming encyclopedia. Master every game with our detailed guides, strategies, and tutorials.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="freefire.html">Free Fire</a></li>
+                    <li><a href="minecraft.html">Minecraft</a></li>
+                    <li><a href="#">Leaderboards</a></li>
+                    <li><a href="#">Tier Lists</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Patch Notes</a></li>
+                    <li><a href="#">Meta Reports</a></li>
+                    <li><a href="#">Pro Streams</a></li>
+                    <li><a href="#">Tournaments</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our newsletter for the latest gaming guides and meta updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 GameVerse. All rights reserved. Made with <i class="fas fa-heart"></i> for gamers worldwide.</p>
+            <div class="footer-badges">
+                <div class="badge"><i class="fas fa-shield-alt"></i> Safe Gaming</div>
+                <div class="badge"><i class="fas fa-bolt"></i> Updated Daily</div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Mob Modal -->
+    <div class="modal-overlay" id="mobModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalMobName">Mob Name</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Mobs specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Particles.js initialization
+            particlesJS("particles-js", {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: "#2563eb" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.5, random: true },
+                    size: { value: 3, random: true },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#0ea5e9",
+                        opacity: 0.4,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2,
+                        direction: "none",
+                        random: true,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: true, mode: "repulse" },
+                        onclick: { enable: true, mode: "push" },
+                        resize: true
+                    }
+                }
+            });
+
+            // Mob search functionality
+            const searchInput = document.getElementById('mobSearch');
+            const mobCards = document.querySelectorAll('.character-card');
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                mobCards.forEach(card => {
+                    const mobName = card.querySelector('h5').textContent.toLowerCase();
+                    const mobSkill = card.querySelector('.character-skill').textContent.toLowerCase();
+                    
+                    if (mobName.includes(searchTerm) || mobSkill.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Tab functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and panes
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanes.forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding pane
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Filter tags functionality
+            const filterTags = document.querySelectorAll('.filter-tag');
+            filterTags.forEach(tag => {
+                tag.addEventListener('click', function() {
+                    filterTags.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filterType = this.textContent.toLowerCase();
+                    // Filter logic would go here
+                });
+            });
+            
+            // Mob modal functionality
+            const modal = document.getElementById('mobModal');
+            const modalClose = document.querySelector('.modal-close');
+            const mobInfoBtns = document.querySelectorAll('.btn-character-info');
+            
+            mobInfoBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const mobCard = this.closest('.character-card');
+                    const mobName = mobCard.querySelector('h5').textContent;
+                    const mobType = mobCard.querySelector('.character-type').textContent;
+                    const mobSkill = mobCard.querySelector('.character-skill').textContent;
+                    
+                    document.getElementById('modalMobName').textContent = mobName;
+                    
+                    // Create modal content
+                    const modalBody = document.querySelector('.modal-body');
+                    modalBody.innerHTML = `
+                        <div class="mob-modal-content">
+                            <div class="mob-modal-image">
+                                <img src="${mobCard.querySelector('img').src}" alt="${mobName}">
+                            </div>
+                            <div class="mob-modal-info">
+                                <div class="mob-modal-type">
+                                    <span class="mob-type-badge">${mobType}</span>
+                                    <span class="mob-skill">${mobSkill}</span>
+                                </div>
+                                <p>Detailed information about ${mobName} would appear here, including behavior patterns, drops, spawn conditions, and strategies.</p>
+                                <div class="mob-modal-stats">
+                                    <div class="stat-row">
+                                        <span>Health:</span>
+                                        <span>50 HP</span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span>Damage:</span>
+                                        <span>10-25</span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span>Spawn:</span>
+                                        <span>Specific Biome</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    modal.classList.add('active');
+                });
+            });
+            
+            modalClose.addEventListener('click', function() {
+                modal.classList.remove('active');
+            });
+            
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                }
+            });
+            
+            // FAQ accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i.fa-chevron-down');
+                    
+                    // Close other open answers
+                    document.querySelectorAll('.faq-answer.active').forEach(ans => {
+                        if (ans !== answer) {
+                            ans.classList.remove('active');
+                            ans.previousElementSibling.querySelector('i.fa-chevron-down').classList.remove('rotate');
+                        }
+                    });
+                    
+                    // Toggle current answer
+                    answer.classList.toggle('active');
+                    icon.classList.toggle('rotate');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,694 @@
+<!-- pubg-vehicles.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse | PUBG Vehicles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="grid-background"></div>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon"><i class="fas fa-gamepad"></i></span>
+                <h1 class="logo-text">GAME<span class="logo-highlight">VERSE</span></h1>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="pubg.html" class="nav-link"><i class="fas fa-crosshairs"></i> PUBG</a>
+                <a href="pubg-vehicles.html" class="nav-link active"><i class="fas fa-car"></i> Vehicles</a>
+                <a href="#" class="nav-link"><i class="fas fa-trophy"></i> Leaderboards</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-auth"><i class="fas fa-user-astronaut"></i> Profile</button>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Vehicle Hero Section -->
+    <section class="content-hero">
+        <div class="hero-content">
+            <div class="content-badge">ULTIMATE VEHICLE ENCYCLOPEDIA</div>
+            <h2 class="content-title">PUBG <span class="text-gradient">VEHICLES</span></h2>
+            <p class="content-subtitle">Master every vehicle's stats, capabilities, and tactical advantages with our complete 2026 guide</p>
+            
+            <!-- Vehicle Search -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search vehicles (e.g., UAZ, Dacia, BRDM-2)..." id="vehicleSearch">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="filter-tags">
+                    <span class="filter-tag active">All</span>
+                    <span class="filter-tag">Land Vehicles</span>
+                    <span class="filter-tag">Aerial</span>
+                    <span class="filter-tag">Aquatic</span>
+                    <span class="filter-tag">Luxury 2026</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Vehicle Stats -->
+        <div class="content-stats">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>20+</h4>
+                    <p>Total Vehicles</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>152</h4>
+                    <p>Max Speed (km/h)</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>2000</h4>
+                    <p>Highest HP</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>4</h4>
+                    <p>Luxury Collabs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Vehicle Categories -->
+    <section class="tier-section">
+        <div class="section-header">
+            <h3 class="section-title"><span class="text-outline">VEHICLE CATEGORIES</span> 2026</h3>
+            <p class="section-subtitle">The definitive guide to PUBG's diverse vehicle roster and tactical uses</p>
+        </div>
+        
+        <div class="tier-container">
+            <!-- Standard Land Vehicles -->
+            <div class="tier-tier tier-s">
+                <div class="tier-header">
+                    <h4><i class="fas fa-crown"></i> THE "BIG THREE" - Standard Land Vehicles</h4>
+                    <span class="tier-desc">Workhorses of Erangel and Miramar - 50% of your gameplay time</span>
+                </div>
+                <div class="tier-characters">
+                    <!-- UAZ Card -->
+                    <div class="character-card" data-character="uaz">
+                        <div class="character-img">
+                            <img src="https://media.sketchfab.com/models/d5e9c030cfad4f8e93c5d3950fc5349a/thumbnails/fd6ec6633e97447c9eb60cc7d3ee4fb4/173ed20512874096b637355b183d934c.jpeg" alt="UAZ">
+                            <div class="character-overlay">
+                                <span class="character-type">Off-Road Tank</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>UAZ</h5>
+                            <p class="character-skill">Closed Top Version Preferred</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7</span>
+                            </div>
+                            <p class="character-desc">Capacity: 4 | HP: 1820 | Speed: ~115 km/h</p>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                    
+                    <!-- Dacia Card -->
+                    <div class="character-card" data-character="dacia">
+                        <div class="character-img">
+                            <img src="https://static.wikia.nocookie.net/battlegrounds_gamepedia_en/images/c/c5/Vehicle_Dacia.png/revision/latest?cb=20200227213536" alt="Dacia 1300">
+                            <div class="character-overlay">
+                                <span class="character-type">Speed Demon</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>DACIA 1300</h5>
+                            <p class="character-skill">Best for Paved Roads</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <p class="character-desc">Capacity: 4 | HP: 1820 | Speed: ~139 km/h</p>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                    
+                    <!-- Coupe RB Card -->
+                    <div class="character-card" data-character="coupe">
+                        <div class="character-img">
+                            <img src="https://static.wikia.nocookie.net/battlegrounds_gamepedia_en/images/f/fa/Vehicle_Coupe_RB_4.png/revision/latest?cb=20210116145038" alt="Coupe RB">
+                            <div class="character-overlay">
+                                <span class="character-type">Duo Choice</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>COUPE RB</h5>
+                            <p class="character-skill">Fastest Non-Airdrop</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                            <p class="character-desc">Capacity: 2 | Speed: 150 km/h | Bugatti/Porsche Skin</p>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map-Exclusive Specialists -->
+            <div class="tier-tier tier-a">
+                <div class="tier-header">
+                    <h4><i class="fas fa-map-marked-alt"></i> MAP-EXCLUSIVE SPECIALISTS</h4>
+                    <span class="tier-desc">Optimized for specific terrain and tactical situations</span>
+                </div>
+                <div class="tier-characters">
+                    <!-- Add more map-exclusive vehicles here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Vehicle Details -->
+    <section class="content-details">
+        <div class="section-header">
+            <h3 class="section-title">COMPLETE <span class="text-gradient">VEHICLE GUIDE</span></h3>
+            <p class="section-subtitle">Detailed analysis of every vehicle's capabilities, strategies, and pro tactics</p>
+        </div>
+        
+        <div class="content-tabs">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="luxury">Luxury Collaborations</button>
+                <button class="tab-btn" data-tab="specialists">Map Specialists</button>
+                <button class="tab-btn" data-tab="armored">Armored Vehicles</button>
+                <button class="tab-btn" data-tab="tactics">Pro Tactics</button>
+                <button class="tab-btn" data-tab="faq">FAQ</button>
+            </div>
+            
+            <div class="tab-content">
+                <!-- Luxury Collaborations Tab -->
+                <div class="tab-pane active" id="luxury">
+                    <h4>2026 Luxury Collaborations</h4>
+                    <p>Vehicle skins aren't just for looks—they change the entire experience with custom sounds and animations.</p>
+                    
+                    <div class="character-detail-grid">
+                        <!-- Porsche Collaboration -->
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>PUBG x Porsche</h5>
+                                    <span class="character-detail-role">German Engineering</span>
+                                </div>
+                                <div class="character-detail-badge defensive">Luxury</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <img src="https://www.topuplive.com/upload/nNKQG194-zcmy.jpg" alt="Porsche Collab" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+                                <div class="character-detail-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Models</span>
+                                        <span class="stat-value">911 Carrera GTS</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">For Vehicle</span>
+                                        <span class="stat-value">Coupe RB (Cayenne for UAZ)</span>
+                                    </div>
+                                </div>
+                                <p class="character-detail-desc">Features "Active Rear Wings" that lift up at high speed and custom exhaust flames. The ultimate status symbol in PUBG with unique engine sounds and visual effects.</p>
+                                <div class="character-detail-tips">
+                                    <h6>Special Features:</h6>
+                                    <p>• Active aerodynamic system<br>• Custom exhaust animations<br>• Unique engine roar<br>• Special starting island showcase</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Bugatti Collaboration -->
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>PUBG x Bugatti</h5>
+                                    <span class="character-detail-role">French Hypercar</span>
+                                </div>
+                                <div class="character-detail-badge support">Ultimate</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <img src="https://wstatic-prod-boc.krafton.com/common/content/news/20250731/xlj6AHi4.jpg" alt="Bugatti Collab" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+                                <div class="character-detail-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Model</span>
+                                        <span class="stat-value">Chiron</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">For Vehicle</span>
+                                        <span class="stat-value">Coupe RB Exclusive</span>
+                                    </div>
+                                </div>
+                                <p class="character-detail-desc">Features the most unique engine roar in the game. Owners unlock the "Bugatti Container" on the starting island to showcase the car before the match begins.</p>
+                                <div class="character-detail-tips">
+                                    <h6>Exclusive Perks:</h6>
+                                    <p>• Starting island showcase container<br>• Hypercar engine sounds<br>• Unique acceleration effects<br>• Exclusive spawn animations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map Specialists Tab -->
+                <div class="tab-pane" id="specialists">
+                    <h4>Map-Exclusive Vehicles</h4>
+                    <p>Specialized vehicles optimized for specific map terrains and conditions.</p>
+                    
+                    <div class="video-wrapper">
+                        <iframe class="detail-video" src="https://www.youtube.com/embed/TREhR4y-dtw" title="COMPLETE PUBG VEHICLE GUIDE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <!-- Map Specialist Vehicles Grid -->
+                    <div class="character-detail-grid" style="margin-top: 2rem;">
+                        <!-- Mirado -->
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>Mirado</h5>
+                                    <span class="character-detail-role">Muscle Car</span>
+                                </div>
+                                <div class="character-detail-badge defensive">Miramar</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <img src="https://media.sketchfab.com/models/491acd7c7566499fb609f9021bd911e2/thumbnails/d9ccb253781645d885a038451a060602/c32b4e35e03f4b369c8a5230089dedd7.jpeg" alt="Mirado" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+                                <p class="character-detail-desc">Highest top speed on flat roads (152 km/h). The ultimate muscle car for Miramar's long desert highways.</p>
+                                <div class="character-detail-tips">
+                                    <h6>Map Advantage:</h6>
+                                    <p>Perfect for Miramar's long straight roads. Outruns every other vehicle on paved surfaces.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Zima -->
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>Zima</h5>
+                                    <span class="character-detail-role">Snow Specialist</span>
+                                </div>
+                                <div class="character-detail-badge support">Vikendi</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <p class="character-detail-desc">4x4 that handles ice and snow much better than Dacia. Essential for Vikendi's slippery terrain.</p>
+                                <div class="character-detail-tips">
+                                    <h6>Traction Advantage:</h6>
+                                    <p>Superior handling on snow and ice. Maintains control where other vehicles slide uncontrollably.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Armored Vehicles Tab -->
+                <div class="tab-pane" id="armored">
+                    <h4>The BRDM-2 - Ultimate Protection</h4>
+                    <p>Obtainable only by firing a Flare Gun outside the safe zone.</p>
+                    
+                    <div class="character-detail-card">
+                        <div class="character-detail-header">
+                            <div class="character-detail-name">
+                                <h5>BRDM-2</h5>
+                                <span class="character-detail-role">Amphibious Armored Vehicle</span>
+                            </div>
+                            <div class="character-detail-badge defensive">Airdrop Only</div>
+                        </div>
+                        <div class="character-detail-content">
+                            <img src="https://static.wikia.nocookie.net/battlegrounds_gamepedia_en/images/8/8a/Vehicle_BRDM-2.png/revision/latest/scale-to-width-down/1200?cb=20200227214117" alt="BRDM-2" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+                            <div class="character-detail-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">HP</span>
+                                    <span class="stat-value">Massive (2000+)</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Amphibious</span>
+                                    <span class="stat-value">Yes</span>
+                                </div>
+                            </div>
+                            <p class="character-detail-desc">The ultimate protection vehicle with reinforced bulletproof windows and amphibious capabilities.</p>
+                            <div class="character-detail-tips">
+                                <h6>Key Advantages:</h6>
+                                <p>• Bulletproof windows - cannot be shot while inside<br>• Amphibious - bypass bridge campers entirely<br>• Massive health pool - survives multiple clips or RPGs<br>• Complete squad protection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pro Tactics Tab -->
+                <div class="tab-pane" id="tactics">
+                    <h4>Professional Driving Tactics</h4>
+                    <p>Master the "Car Meta" with these advanced strategies used by pro players.</p>
+                    
+                    <div class="video-wrapper">
+                        <iframe class="detail-video" src="https://www.youtube.com/embed/q1c2_PkgWtU" title="GUIDE: How to BEST use vehicles for COMBAT in PLAYERUNKNOWN's BATTLEGROUNDS (PUBG)" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <!-- Tactics Grid -->
+                    <div class="character-detail-grid" style="margin-top: 2rem;">
+                        <!-- Vehicle-as-Cover -->
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>The "Vehicle-as-Cover"</h5>
+                                    <span class="character-detail-role">Hard Cover Tactics</span>
+                                </div>
+                                <div class="character-detail-badge defensive">Defensive</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <p class="character-detail-desc">When caught in an open field, don't just jump out. Use the vehicle as mobile cover.</p>
+                                <div class="character-detail-tips">
+                                    <h6>Pro Move:</h6>
+                                    <p>1. Pull handbrake and drift sideways to enemy<br>2. Vehicle stops horizontally to enemy<br>3. Pop tires on side facing enemy (lowers chassis)<br>4. Use as bulletproof cover</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Drive-By Spray -->
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>The "Drive-By" Spray</h5>
+                                    <span class="character-detail-role">Mobile Assault</span>
+                                </div>
+                                <div class="character-detail-badge support">Offensive</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <p class="character-detail-desc">2026 physics refined shooting from moving vehicles. SMGs dominate drive-by meta.</p>
+                                <div class="character-detail-tips">
+                                    <h6>Optimal Strategy:</h6>
+                                    <p>• Use passenger seats (2, 3, or 4)<br>• Lean out with SMG (low recoil while moving)<br>• M416 works but SMG better<br>• Coordinate with driver for stable platform</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Tab -->
+                <div class="tab-pane" id="faq">
+                    <h4>Vehicle Maintenance & Advanced Techniques</h4>
+                    
+                    <div class="character-detail-card">
+                        <div class="character-detail-header">
+                            <div class="character-detail-name">
+                                <h5>Frequently Asked Questions</h5>
+                                <span class="character-detail-role">Expert Knowledge</span>
+                            </div>
+                        </div>
+                        <div class="character-detail-content">
+                            <div class="character-detail-tips">
+                                <h6>Q: What do smoke colors mean?</h6>
+                                <p><strong>A:</strong> Grey Smoke = 50% health. Black Smoke/Fire = below 20%, will explode soon. Jump immediately!</p>
+                            </div>
+                            <div class="character-detail-tips">
+                                <h6>Q: Can Gas Cans have other uses?</h6>
+                                <p><strong>A:</strong> Yes! In 2026, you can: 1) Pour fuel to create fire traps, 2) Throw and shoot for explosions, 3) Create environmental hazards.</p>
+                            </div>
+                            <div class="character-detail-tips">
+                                <h6>Q: Can I repair vehicles?</h6>
+                                <p><strong>A:</strong> Not HP repair, but Repair Kits fix popped tires and engine stalls on certain maps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Guides -->
+    <section class="video-guides">
+        <div class="section-header">
+            <h3 class="section-title">VEHICLE <span class="text-outline">VIDEO GUIDES</span></h3>
+            <p class="section-subtitle">Learn from professional players with advanced vehicle tactics</p>
+        </div>
+        
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://i.ytimg.com/vi/TREhR4y-dtw/maxresdefault.jpg" alt="Complete Vehicle Guide">
+                    <div class="video-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h5>Complete PUBG Vehicle Guide 2026</h5>
+                    <p>Everything you need to know about every vehicle in PUBG</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 25:30</span>
+                        <span><i class="far fa-eye"></i> 1.2M</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://i.ytimg.com/vi/q1c2_PkgWtU/maxresdefault.jpg" alt="Vehicle Combat">
+                    <div class="video-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h5>Advanced Vehicle Combat Tactics</h5>
+                    <p>Master drive-bys, vehicle-as-cover, and C4 suicide strategies</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 18:45</span>
+                        <span><i class="far fa-eye"></i> 845K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Back Navigation -->
+    <div class="back-navigation">
+        <a href="pubg.html" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Back to PUBG
+        </a>
+        <div class="quick-nav">
+            <a href="pubg-weapons.html" class="quick-nav-btn">
+                <i class="fas fa-gun"></i> Weapons
+            </a>
+            <a href="pubg-outfits.html" class="quick-nav-btn">
+                <i class="fas fa-tshirt"></i> Outfits
+            </a>
+            <a href="pubg-controls.html" class="quick-nav-btn">
+                <i class="fas fa-gamepad"></i> Controls
+            </a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>GAME<span class="logo-highlight">VERSE</span></h3>
+                </div>
+                <p class="footer-description">
+                    The ultimate gaming encyclopedia. Master your favorite games with our comprehensive guides, strategies, and updates.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="freefire.html">Free Fire</a></li>
+                    <li><a href="pubg.html">PUBG</a></li>
+                    <li><a href="leaderboards.html">Leaderboards</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Game Guides</h4>
+                <ul class="footer-links">
+                    <li><a href="freefire-characters.html">Free Fire Characters</a></li>
+                    <li><a href="freefire-weapons.html">Free Fire Weapons</a></li>
+                    <li><a href="pubg-vehicles.html">PUBG Vehicles</a></li>
+                    <li><a href="pubg-weapons.html">PUBG Weapons</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our newsletter for the latest gaming guides and updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 GameVerse. All rights reserved. Made with <i class="fas fa-heart"></i> for gamers worldwide.</p>
+            <div class="footer-badges">
+                <span class="badge"><i class="fas fa-shield-alt"></i> Safe Gaming</span>
+                <span class="badge"><i class="fas fa-rocket"></i> Always Updated</span>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Vehicle Modal -->
+    <div class="modal-overlay" id="vehicleModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalVehicleName">Vehicle Name</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Vehicle specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Vehicle search functionality
+            const searchInput = document.getElementById('vehicleSearch');
+            const vehicleCards = document.querySelectorAll('.character-card');
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                vehicleCards.forEach(card => {
+                    const vehicleName = card.querySelector('h5').textContent.toLowerCase();
+                    const vehicleType = card.querySelector('.character-skill').textContent.toLowerCase();
+                    
+                    if (vehicleName.includes(searchTerm) || vehicleType.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Tab functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and panes
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanes.forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding pane
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Vehicle modal functionality
+            const modal = document.getElementById('vehicleModal');
+            const modalClose = document.querySelector('.modal-close');
+            const vehicleInfoBtns = document.querySelectorAll('.btn-character-info');
+            
+            vehicleInfoBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const vehicleCard = this.closest('.character-card');
+                    const vehicleName = vehicleCard.querySelector('h5').textContent;
+                    
+                    document.getElementById('modalVehicleName').textContent = vehicleName;
+                    modal.classList.add('active');
+                    
+                    // Load dynamic content based on vehicle
+                    const modalBody = modal.querySelector('.modal-body');
+                    modalBody.innerHTML = `
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                            <div>
+                                <img src="${vehicleCard.querySelector('img').src}" alt="${vehicleName}" style="width: 100%; border-radius: 10px;">
+                            </div>
+                            <div>
+                                <h4>${vehicleName} Details</h4>
+                                <p>${vehicleCard.querySelector('.character-desc').textContent}</p>
+                                <div style="margin-top: 1rem;">
+                                    <h5>Statistics:</h5>
+                                    <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px;">
+                                        <p><strong>Type:</strong> ${vehicleCard.querySelector('.character-overlay span').textContent}</p>
+                                        <p><strong>Skill:</strong> ${vehicleCard.querySelector('.character-skill').textContent}</p>
+                                        <p><strong>Rating:</strong> ${vehicleCard.querySelector('.character-rating span').textContent}/5.0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+            });
+            
+            modalClose.addEventListener('click', function() {
+                modal.classList.remove('active');
+            });
+            
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                }
+            });
+            
+            // Filter tag functionality
+            const filterTags = document.querySelectorAll('.filter-tag');
+            filterTags.forEach(tag => {
+                tag.addEventListener('click', function() {
+                    filterTags.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filterType = this.textContent.toLowerCase();
+                    // Implement filter logic here
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!-- freefire-characters.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse | Free Fire Characters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="grid-background"></div>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon"><i class="fas fa-gamepad"></i></span>
+                <h1 class="logo-text">GAME<span class="logo-highlight">VERSE</span></h1>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="freefire.html" class="nav-link"><i class="fas fa-fire"></i> Free Fire</a>
+                <a href="freefire-characters.html" class="nav-link active"><i class="fas fa-user-ninja"></i> Characters</a>
+                <a href="#" class="nav-link"><i class="fas fa-trophy"></i> Leaderboards</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-auth"><i class="fas fa-user-astronaut"></i> Profile</button>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Character Hero Section -->
+    <section class="content-hero">
+        <div class="hero-content">
+            <div class="content-badge">ULTIMATE ENCYCLOPEDIA</div>
+            <h2 class="content-title">FREE FIRE <span class="text-gradient">CHARACTERS</span></h2>
+            <p class="content-subtitle">Master every skill, every combo, and every strategy with our complete character guide</p>
+            
+            <!-- Character Search -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search characters (e.g., Alok, Wukong, K)..." id="characterSearch">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="filter-tags">
+                    <span class="filter-tag active">All</span>
+                    <span class="filter-tag">Active Skills</span>
+                    <span class="filter-tag">Passive Skills</span>
+                    <span class="filter-tag">New (2026)</span>
+                    <span class="filter-tag">Tier S</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Character Stats -->
+        <div class="content-stats">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>60+</h4>
+                    <p>Total Characters</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>24</h4>
+                    <p>Active Skills</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>36</h4>
+                    <p>Passive Skills</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="stat-info">
+                    <h4>8</h4>
+                    <p>Tier S Ranked</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Character Tiers -->
+    <section class="tier-section">
+        <div class="section-header">
+            <h3 class="section-title"><span class="text-outline">CHARACTER TIERS</span> 2026</h3>
+            <p class="section-subtitle">The definitive ranking based on competitive meta and win rates</p>
+        </div>
+        
+        <div class="tier-container">
+            <div class="tier-tier tier-s">
+                <div class="tier-header">
+                    <h4><i class="fas fa-crown"></i> TIER S - GOD TIER</h4>
+                    <span class="tier-desc">Must have in every competitive lineup</span>
+                </div>
+                <div class="tier-characters">
+                    <div class="character-card" data-character="alok">
+                        <div class="character-img">
+                            <img src="https://wallpapers.com/images/thumbnail/free-fire-alok-exclusive-skin-character-0e5dp581fkcvaduz.webp" alt="DJ Alok">
+                            <div class="character-overlay">
+                                <span class="character-type">Active</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>DJ ALOK</h5>
+                            <p class="character-skill">Drop the Beat</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                    
+                    <div class="character-card" data-character="k">
+                        <div class="character-img">
+                            <img src="https://i.ytimg.com/vi/Qu6WQa8p9F4/maxresdefault.jpg" alt="K">
+                            <div class="character-overlay">
+                                <span class="character-type">Active</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>K</h5>
+                            <p class="character-skill">Master of All</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                    
+                    <div class="character-card" data-character="wukong">
+                        <div class="character-img">
+                            <img src="https://preview.redd.it/which-one-is-the-superior-cover-art-v0-cr3lvy59zu3d1.png" alt="Wukong">
+                            <div class="character-overlay">
+                                <span class="character-type">Active</span>
+                            </div>
+                        </div>
+                        <div class="character-info">
+                            <h5>WUKONG</h5>
+                            <p class="character-skill">Camouflage</p>
+                            <div class="character-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <button class="btn-character-info">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tier-tier tier-a">
+                <div class="tier-header">
+                    <h4><i class="fas fa-gem"></i> TIER A - ELITE</h4>
+                    <span class="tier-desc">Excellent picks for specific strategies</span>
+                </div>
+                <div class="tier-characters">
+                    <!-- Add more characters here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Character Details -->
+    <section class="content-details">
+        <div class="section-header">
+            <h3 class="section-title">COMPLETE <span class="text-gradient">CHARACTER GUIDE</span></h3>
+            <p class="section-subtitle">Detailed analysis of every character's abilities, strategies, and best combos</p>
+        </div>
+        
+        <div class="content-tabs">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="newgen">New Generation</button>
+                <button class="tab-btn" data-tab="captains">Active Skills</button>
+                <button class="tab-btn" data-tab="support">Passive Skills</button>
+                <button class="tab-btn" data-tab="combos">Best Combos</button>
+                <button class="tab-btn" data-tab="faq">FAQ</button>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-pane active" id="newgen">
+                    <h4>The New Generation (2024-2026 Releases)</h4>
+                    <p>These characters are currently defining the meta. If you aren't using them, you are falling behind.</p>
+                    
+                    <div class="character-detail-grid">
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>Lila</h5>
+                                    <span class="character-detail-role">The Gloo Artist</span>
+                                </div>
+                                <div class="character-detail-badge defensive">Defensive</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <div class="character-detail-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Skill Type</span>
+                                        <span class="stat-value">Passive</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Skill Name</span>
+                                        <span class="stat-value">Gloo Strike</span>
+                                    </div>
+                                </div>
+                                <p class="character-detail-desc">When hitting enemies or vehicles with a Rifle, their movement speed is reduced. If you knock down a decelerated enemy, they freeze for 3 seconds, and you instantly receive an extra Gloo Wall.</p>
+                                <div class="character-detail-tips">
+                                    <h6>How to Use:</h6>
+                                    <p>Lila is the anti-rusher. Use an AR (like AK47 or SCAR). Tag the enemy to slow them down, then when you knock them, you get free loot (Gloo Wall).</p>
+                                </div>
+                                <div class="character-detail-combo">
+                                    <h6>Best Combo:</h6>
+                                    <span class="combo-tag">Lila</span>
+                                    <span class="combo-tag">Moco</span>
+                                    <span class="combo-tag">Maro</span>
+                                    <span class="combo-tag">Rafael</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="character-detail-card">
+                            <div class="character-detail-header">
+                                <div class="character-detail-name">
+                                    <h5>Kassie</h5>
+                                    <span class="character-detail-role">The Soul Linker</span>
+                                </div>
+                                <div class="character-detail-badge support">Support</div>
+                            </div>
+                            <div class="character-detail-content">
+                                <div class="character-detail-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Skill Type</span>
+                                        <span class="stat-value">Active</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Skill Name</span>
+                                        <span class="stat-value">Electro Therapy</span>
+                                    </div>
+                                </div>
+                                <p class="character-detail-desc">Forms a healing link with a teammate. Both recover 3 HP/s. Press the skill button again to instantly heal the target for 100 HP.</p>
+                                <div class="character-detail-tips">
+                                    <h6>How to Use:</h6>
+                                    <p>Kassie is better than Dimitri for Duo mode. Link to your rusher. As they run in and take damage, press the button to instantly refill their health.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add other tab contents -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Guides -->
+    <section class="video-guides">
+        <div class="section-header">
+            <h3 class="section-title">CHARACTER <span class="text-outline">VIDEO GUIDES</span></h3>
+            <p class="section-subtitle">Learn from the best with professional gameplay and tutorials</p>
+        </div>
+        
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://i.ytimg.com/vi/N9sc63yV-gE/maxresdefault.jpg" alt="Kassie Guide">
+                    <div class="video-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h5>Kassie Ultimate Guide</h5>
+                    <p>Complete breakdown of Electro Therapy and best squad compositions</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 12:45</span>
+                        <span><i class="far fa-eye"></i> 245K</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://i.ytimg.com/vi/8TaXoCY6rbQ/maxresdefault.jpg" alt="Dimitri Guide">
+                    <div class="video-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h5>Dimitri Healing Strategies</h5>
+                    <p>Master the Healing Heartbeat for squad survival</p>
+                    <div class="video-meta">
+                        <span><i class="far fa-clock"></i> 15:20</span>
+                        <span><i class="far fa-eye"></i> 189K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Back Navigation -->
+    <div class="back-navigation">
+        <a href="freefire.html" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Back to Free Fire
+        </a>
+        <div class="quick-nav">
+            <a href="freefire-weapons.html" class="quick-nav-btn">
+                <i class="fas fa-gun"></i> Weapons
+            </a>
+            <a href="freefire-outfits.html" class="quick-nav-btn">
+                <i class="fas fa-tshirt"></i> Outfits
+            </a>
+            <a href="freefire-controls.html" class="quick-nav-btn">
+                <i class="fas fa-gamepad"></i> Controls
+            </a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <!-- Same footer as index.html -->
+    </footer>
+    
+    <!-- Character Modal -->
+    <div class="modal-overlay" id="characterModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalCharacterName">Character Name</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Character specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Character search functionality
+            const searchInput = document.getElementById('characterSearch');
+            const characterCards = document.querySelectorAll('.character-card');
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                characterCards.forEach(card => {
+                    const characterName = card.querySelector('h5').textContent.toLowerCase();
+                    const characterSkill = card.querySelector('.character-skill').textContent.toLowerCase();
+                    
+                    if (characterName.includes(searchTerm) || characterSkill.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Tab functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and panes
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanes.forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding pane
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Character modal functionality
+            const modal = document.getElementById('characterModal');
+            const modalClose = document.querySelector('.modal-close');
+            const characterInfoBtns = document.querySelectorAll('.btn-character-info');
+            
+            characterInfoBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const characterCard = this.closest('.character-card');
+                    const characterName = characterCard.querySelector('h5').textContent;
+                    
+                    document.getElementById('modalCharacterName').textContent = characterName;
+                    modal.classList.add('active');
+                });
+            });
+            
+            modalClose.addEventListener('click', function() {
+                modal.classList.remove('active');
+            });
+            
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
